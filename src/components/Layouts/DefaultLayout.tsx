@@ -12,7 +12,7 @@ export default function DefaultLayout({
   return (
     <>
       {/* <!-- ===== Page Wrapper Start ===== --> */}
-      <div className='flex h-screen overflow-hidden'>
+      <div className='flex h-screen overflow-hidden bg_gif'>
         {/* <!-- ===== Sidebar Start ===== --> */}
         <Sidebar
           sidebarOpen={sidebarOpen}

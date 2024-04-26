@@ -21,6 +21,14 @@ body {
   overflow-x: hidden;
 }
 
+.bg_gif {
+  background-image: url('/images/gif.gif');
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
 .bg_grident {
   background-image: linear-gradient(to right, #FF36EB80, #00000000);
 }

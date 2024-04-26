@@ -1,14 +1,40 @@
-import React from 'react'
+'use client'
+
+import React, { useState } from 'react'
 
 export default function HomeMain() {
+  const [activeTab, setActiveTab] = useState('Complete')
+
+  const handleTabClick = (tabName) => {
+    setActiveTab(tabName)
+  }
   return (
     <div className='mb-20 mt-10'>
       <div className='flex items-center gap-4'>
-        <button className='border-b border-white text-white p-3 text-lg '>
+        <button
+          className={`text-white p-3 text-lg ${
+            activeTab === 'Complete' ? 'border-b-2 border-white' : ''
+          }`}
+          onClick={() => handleTabClick('Complete')}
+        >
           Complete
         </button>
-        <button className=' text-[#fff6] p-3 text-lg'>Dedicated</button>
-        <button className=' text-[#fff6] p-3 text-lg'>Gaming</button>
+        <button
+          className={` text-white p-3 text-lg ${
+            activeTab === 'Dedicated' ? 'border-b-2 border-white' : ''
+          }`}
+          onClick={() => handleTabClick('Dedicated')}
+        >
+          Dedicated
+        </button>
+        <button
+          className={` text-white p-3 text-lg ${
+            activeTab === 'Gaming' ? 'border-b-2 border-white' : ''
+          }`}
+          onClick={() => handleTabClick('Gaming')}
+        >
+          Gaming
+        </button>
       </div>
       <div className='bg-[#1c1c1c87] rounded-2xl w-full h-[402px] flex flex-col justify-center items-center mt-10'>
         <h1 className='text-[48px] font-extrabold gradient-text text-center'>

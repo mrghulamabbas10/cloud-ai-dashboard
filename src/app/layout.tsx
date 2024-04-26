@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={urbanist.className}>
+      <body className={`${urbanist.className} `}>
         <DefaultLayout>{children}</DefaultLayout>
       </body>
     </html>

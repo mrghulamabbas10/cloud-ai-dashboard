@@ -121,31 +121,37 @@ export default function Page() {
           className=''
           key={index}
         >
-          <div className='bg_grident px-5 py-3 text-2xl mt-8 md:w-[934px] w-full'>
+          <div className='bg_grident px-5 py-3 text-2xl md:mt-8 mt-4 md:w-[934px] w-full'>
             {item.maintitle}
           </div>
           <div className='grid md:grid-cols-2 grid-cols-1 gap-10 mt-6'>
             <div className='bg-[#1C1C1C] md:px-8 px-7 md:py-14 py-10 rounded-2xl text-[#A1A1AA]'>
-              <div className={`${item.titlebg} py-4 px-8 rounded-2xl`}>
+              <div className={`${item.titlebg} py-4 px-4 rounded-2xl`}>
                 <h4
-                  className={`font-extrabold text-2xl  text-center ${item.titleclass}`}
+                  className={`font-extrabold md:text-xl text-base  text-center ${item.titleclass}`}
                 >
                   {item.title}
                 </h4>
               </div>
               <div className='mt-5'>
-                <p className='mt-4 text-lg text-center '>{item.discription1}</p>
-                <p className='mt-4 text-lg text-center '>{item.discription2}</p>
-                <p className='mt-4 text-lg text-center '>{item.discription3}</p>
+                <p className='mt-4 md:text-lg text-sm text-center '>
+                  {item.discription1}
+                </p>
+                <p className='mt-4 md:text-lg text-sm text-center '>
+                  {item.discription2}
+                </p>
+                <p className='mt-4 md:text-lg text-sm text-center '>
+                  {item.discription3}
+                </p>
               </div>
-              <ul className='text-center mt-8  '>
-                <li>. {item.list1}</li>
-                <li>. {item.list2}</li>
-                <li>. {item.list3}</li>
-                <li>. {item.list4}</li>
-                <li>. {item.list5}</li>
+              <ul className='text-center md:mt-8 mt-4  '>
+                <li className='md:text-base text-sm'>. {item.list1}</li>
+                <li className='md:text-base text-sm'>. {item.list2}</li>
+                <li className='md:text-base text-sm'>. {item.list3}</li>
+                <li className='md:text-base text-sm'>. {item.list4}</li>
+                <li className='md:text-base text-sm'>. {item.list5}</li>
               </ul>
-              <div className='mt-8 mx-auto text-center '>
+              <div className='md:mt-8 mt-4 mx-auto text-center '>
                 <button
                   className='btn_bg px-8 py-3 rounded-2xl w-[233px] text-white'
                   onClick={handlePopup}
@@ -155,32 +161,32 @@ export default function Page() {
               </div>
             </div>
             <div className='bg-[#1C1C1C] md:px-8 px-7 md:py-14 py-10 rounded-2xl text-[#A1A1AA] relative overflow-x-hidden'>
-              <div className={`${item.titlebg2} py-4 px-8 rounded-2xl`}>
+              <div className={`${item.titlebg2} py-4 px-4  rounded-2xl`}>
                 <h4
-                  className={`font-extrabold text-2xl  text-center ${item.titleclass2}`}
+                  className={`font-extrabold md:text-xl text-base  text-center ${item.titleclass2}`}
                 >
                   {item.title2}
                 </h4>
               </div>
               <div className='mt-5'>
-                <p className='mt-4 text-lg text-center '>
+                <p className='mt-4 md:text-lg text-sm text-center '>
                   {item.boxDiscription1}
                 </p>
-                <p className='mt-4 text-lg text-center '>
+                <p className='mt-4 md:text-lg text-sm text-center '>
                   {item.boxDiscription2}
                 </p>
-                <p className='mt-4 text-lg text-center '>
+                <p className='mt-4 md:text-lg text-sm text-center '>
                   {item.boxDiscription3}
                 </p>
               </div>
-              <ul className='text-center mt-8'>
-                <li>. {item.boxlist1}</li>
-                <li>. {item.boxlist2}</li>
-                <li>. {item.boxlist3}</li>
-                <li>. {item.boxlist4}</li>
-                <li>. {item.boxlist5}</li>
+              <ul className='text-center md:mt-8 mt-4'>
+                <li className='md:text-base text-sm'>. {item.boxlist1}</li>
+                <li className='md:text-base text-sm'>. {item.boxlist2}</li>
+                <li className='md:text-base text-sm'>. {item.boxlist3}</li>
+                <li className='md:text-base text-sm'>. {item.boxlist4}</li>
+                <li className='md:text-base text-sm'>. {item.boxlist5}</li>
               </ul>
-              <div className='mt-8 mx-auto text-center relative'>
+              <div className='md:mt-8 mt-4 mx-auto text-center relative'>
                 <button
                   className='btn_bg px-8 py-3 rounded-2xl w-[233px] text-white'
                   onClick={handlePopup}
