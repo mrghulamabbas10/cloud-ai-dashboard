@@ -46,7 +46,7 @@ export default function HomeMain() {
       </div>
       <div className='bg-[#1c1c1c87] rounded-2xl w-full h-[402px] flex flex-col justify-center items-center mt-10'>
         <h1 className='text-[48px] font-extrabold gradient-text text-center'>
-          <Typewriter text='Welcome to the Cloud' />
+          <Typewriter text='Welcome to the CloudAi' />
         </h1>
         <p className='text-lg'>Get started by deploying your first instance</p>
         <button className='btn_bg px-8 py-3 rounded-2xl mt-5'>
