@@ -100,7 +100,7 @@ const Data = [
   },
 ]
 
-export default function page() {
+export default function Page() {
   const [open, setOpen] = useState(false)
 
   const handlePopup = () => {
@@ -113,8 +113,8 @@ export default function page() {
         Easy & Flexible Prices
       </h1>
       <p className='text-lg mt-3 text-center'>
-        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-        consectetur, adipisci velit..."
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+        consectetur, adipisci velit...
       </p>
       {Data.map((item, index) => (
         <div
