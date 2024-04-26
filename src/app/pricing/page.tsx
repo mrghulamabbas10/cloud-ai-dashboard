@@ -125,7 +125,7 @@ export default function Page() {
             {item.maintitle}
           </div>
           <div className='grid md:grid-cols-2 grid-cols-1 gap-10 mt-6'>
-            <div className='bg-[#1C1C1C] md:px-14 px-7 md:py-20 py-10 rounded-2xl text-[#A1A1AA]'>
+            <div className='bg-[#1C1C1C] md:px-8 px-7 md:py-14 py-10 rounded-2xl text-[#A1A1AA]'>
               <div className={`${item.titlebg} py-4 px-8 rounded-2xl`}>
                 <h4
                   className={`font-extrabold text-2xl  text-center ${item.titleclass}`}
@@ -154,7 +154,7 @@ export default function Page() {
                 </button>
               </div>
             </div>
-            <div className='bg-[#1C1C1C] md:px-14 px-7 md:py-20 py-10 rounded-2xl text-[#A1A1AA] relative'>
+            <div className='bg-[#1C1C1C] md:px-8 px-7 md:py-14 py-10 rounded-2xl text-[#A1A1AA] relative'>
               <div className={`${item.titlebg2} py-4 px-8 rounded-2xl`}>
                 <h4
                   className={`font-extrabold text-2xl  text-center ${item.titleclass2}`}
