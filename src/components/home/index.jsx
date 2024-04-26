@@ -12,24 +12,30 @@ export default function HomeMain() {
     <div className='mb-20 mt-10'>
       <div className='flex items-center gap-4'>
         <button
-          className={`text-white p-3 text-lg ${
-            activeTab === 'Complete' ? 'border-b-2 border-white' : ''
+          className={` p-3 text-lg ${
+            activeTab === 'Complete'
+              ? 'border-b-2 border-white text-white'
+              : 'text-[#FFFFFF66]'
           }`}
           onClick={() => handleTabClick('Complete')}
         >
           Complete
         </button>
         <button
-          className={` text-white p-3 text-lg ${
-            activeTab === 'Dedicated' ? 'border-b-2 border-white' : ''
+          className={`  p-3 text-lg ${
+            activeTab === 'Dedicated'
+              ? 'border-b-2 border-white text-white'
+              : 'text-[#FFFFFF66]'
           }`}
           onClick={() => handleTabClick('Dedicated')}
         >
           Dedicated
         </button>
         <button
-          className={` text-white p-3 text-lg ${
-            activeTab === 'Gaming' ? 'border-b-2 border-white' : ''
+          className={`   p-3 text-lg ${
+            activeTab === 'Gaming'
+              ? 'border-b-2 border-white text-white'
+              : 'text-[#FFFFFF66]'
           }`}
           onClick={() => handleTabClick('Gaming')}
         >
