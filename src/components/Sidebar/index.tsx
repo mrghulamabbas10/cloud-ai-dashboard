@@ -109,7 +109,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
       {/* <!-- SIDEBAR HEADER --> */}
       <div className='flex items-center justify-between gap-2  py-5.5 lg:py-6.5'>
         <div className='md:p-8 px-4 py-8'>
-          <div className='relative w-[205px] h-[76px] '>
+          <div className='relative w-[205px] h-[76px] bounse'>
             <Image
               src='/images/logo.png'
               alt='logo'

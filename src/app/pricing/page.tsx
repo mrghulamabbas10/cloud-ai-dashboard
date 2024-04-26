@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import Popup from '@/components/Popup'
+import Typewriter from '@/components/typewriter'
 
 const Data = [
   {
@@ -109,8 +110,8 @@ export default function Page() {
 
   return (
     <div className='my-10 md:mx-24 mx-0'>
-      <h1 className='text-[56px] font-extrabold gradient-text text-center'>
-        Easy & Flexible Prices
+      <h1 className=' font-extrabold gradient-text text-center'>
+        <Typewriter text='Easy & Flexible Prices' />
       </h1>
       <p className='text-lg mt-3 text-center'>
         Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,

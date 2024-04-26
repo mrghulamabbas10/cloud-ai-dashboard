@@ -1,11 +1,12 @@
 import React from 'react'
+import Typewriter from '../typewriter'
 
 export default function Index() {
   return (
     <div className='my-10'>
-      <div className='bg-[#1c1c1c87] rounded-2xl md:h-[561px] h-[550px] px-4 flex flex-col justify-center items-center mt-10'>
-        <h1 className='md:text-[56px] text-[40px] font-extrabold gradient-text text-center '>
-          CloudAI brings <br /> Decentralization to Cloud Computing.
+      <div className='bg-[#1c1c1c87] rounded-2xl md:h-[561px] h-[500px] px-4 flex flex-col justify-center items-center mt-10'>
+        <h1 className='md:text-[56px] text-[40px] font-extrabold gradient-text text-center md:px-20 px-0 '>
+          <Typewriter text='Cloud AI brings Decentralization to Cloud Computing.' />
         </h1>
         <p className='text-lg mt-3 md:px-48 px-0 text-center'>
           By leveraging the newfound possibilities of DePIN (Decentralized

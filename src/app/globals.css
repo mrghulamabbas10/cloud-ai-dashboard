@@ -76,14 +76,7 @@ body {
   }
 }
 
-/* .bg_main {
-  background-image: url('/images/bg-image.png');
-  width: 100%;
-  background-position: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-} */
+
 
 #scroll_none::-webkit-scrollbar {
   display: none;
@@ -94,13 +87,6 @@ body {
   scrollbar-width: none;
 }
 
-/* .bg_card_grident {
-  background-image: linear-gradient(#0A2D1C, #05180f00);
-  border-image: linear-gradient(#E2FF32, #000) 10;
-  border-width: 1px;
-  border-style: solid;
-  width: 100%;
-} */
 
 
 .gradient-text {
@@ -118,21 +104,20 @@ body {
   background-image: linear-gradient(to right, #1f8ebe, #007dbf, #006abe, #0055b9, #003dae, #3133ad, #4b24aa, #6004a4, #7404af, #8804b9, #9d03c3, #b102cd);
 }
 
-.launchpad_bg {
-  background-image: linear-gradient(#0A2D1C, #05180f00);
-  width: 100%;
-  border-radius: 16px;
+.bounse {
+
+  position: relative;
+  animation: bounce 1.5s infinite alternate cubic-bezier(0.5, 0.05, 0.1, 0.3);
 }
 
-.launchpad_bg_top {
-  background-image: linear-gradient(#0A2D1C, #0A2D1C);
-  width: 100%;
-  border-radius: 16px;
-  border: 1px solid #B0F127;
-}
+@keyframes bounce {
+  0% {
+    top: 0;
+  }
 
-.shadowclass {
-  box-shadow: -1px 8px 57px 0px rgba(78, 120, 21, 0.75);
+  100% {
+    top: 5px;
+  }
 }
 
 

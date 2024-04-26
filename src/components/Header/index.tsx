@@ -83,11 +83,11 @@ const Header = (props: {
             </div>
           </div>
 
-          <div className='flex items-center gap-6 cursor-pointer'>
+          <div className='flex items-center gap-6 cursor-pointer bounse'>
             <h4 className='font-semibold text-lg'>Evano</h4>
             <Link
               href=''
-              className='rounded-full overflow-hidden'
+              className='rounded-full overflow-hidden '
             >
               <Image
                 src='/images/profile.png'
